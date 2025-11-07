@@ -1,0 +1,87 @@
+#information {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  height: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+#filters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: start;
+}
+label {
+  font-weight: 600;
+}
+select {
+  width: 200px;
+  height: fit-content;
+  padding: 4px;
+  border-radius: 8px;
+}
+table {
+  width: fit-content;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+table th {
+  padding: 10px;
+  text-align: start;
+  background-color: #ffe3be;
+}
+table td {
+  padding: 10px;
+  text-align: start;
+  vertical-align: top;
+  background-color: #faebd7;
+}
+/* FIRST COLUMN STYLE */
+table td:first-child {
+  text-align: center;
+  background-color: #ffe3be;
+}
+/* TABLE HEAD TOP BORDER RADIUS */
+table thead tr:last-child th:last-child {
+  border-top-right-radius: 10px;
+}
+table thead tr:last-child th:first-child {
+  border-top-left-radius: 10px;
+}
+/* LAST ROW BOTTOM BORDER RADIUS */
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* MEDIA */
+@media (max-width: 412px) {
+  #root {
+    padding: 10px;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  select {
+    width: 100%;
+  }
+}
